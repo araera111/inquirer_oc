@@ -1,0 +1,4 @@
+(executable
+ (public_name oc_readline_utils)
+ (name main)
+ (libraries oc_readline_utils threads yojson batteries))

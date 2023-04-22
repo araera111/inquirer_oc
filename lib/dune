@@ -1,0 +1,2 @@
+(library
+ (name oc_readline_utils))
