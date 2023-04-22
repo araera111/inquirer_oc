@@ -17,3 +17,10 @@ type question = {
   choices : choice list;
   page_size : int option;
 }
+
+type confirm = {
+  name : string;
+  prompt_type : prompt_type;
+  message : string;
+  default : bool option;
+}
