@@ -1,4 +1,5 @@
 open Terminal_util
+open Confirm
 
 type prompt_type =
   | Input
@@ -251,7 +252,6 @@ let list_question num question_option =
         selected := get_pagenation_sublist_cursor next_list !selected;
         list_to_string next_list !selected is_pagination next_list_index
           (List.length subList) message;
-        print_int !selected;
         loop !selected next_list_index
     | Some "Down" ->
         clear_screen ();
@@ -261,6 +261,8 @@ let list_question num question_option =
         loop !selected list_index
     | Some "Enter" ->
         let item = List.nth now_list (!selected - 1) in
+        (* message : item.value *)
+        print_string (message ^ " : " ^ item.value);
         item.value
     | _ -> loop !selected list_index
   in
@@ -286,4 +288,10 @@ let q_option : question =
 
 let result_string = list_question 1 q_option;;
 
-print_string result_string
+print_endline result_string
+
+(* util: *)
+let result = inquirer_confirm 1 2;;
+
+print_int result;;
+print_string "Hello World!"
