@@ -215,6 +215,14 @@ let list_question num question_option =
 
   let pz = match page_size with Some x -> x | None -> 5 in
 
+  let subList = Add.split_every pz choices in
+  let is_pagination = List.length subList > 1 in
+  let now_list = List.nth subList 0 in
+
+  (* 関数起動時に画面を初期化する *)
+  clear_screen ();
+  list_to_string now_list 1 is_pagination 0 (List.length subList) message;
+
   let rec loop index list_index =
     let selected = ref index in
     let subList = Add.split_every pz choices in
@@ -257,9 +265,6 @@ let list_question num question_option =
     | _ -> loop !selected list_index
   in
   loop num 0
-;;
-
-clear_screen ()
 
 let string_list_to_choice_list (list : string list) : choice list =
   let rec loop list index result =
