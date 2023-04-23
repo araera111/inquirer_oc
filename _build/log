@@ -3,7 +3,7 @@
 # Shared cache: disabled
 # Workspace root: /Users/fumio/develop/dune/inquirer_oc
 # Auto-detected concurrency: 8
-$ /Users/fumio/.opam/default/bin/ocamlc.opt -config > /var/folders/zj/9frhftnn5qs7ynz_z4wlhg9h0000gn/T/dune_0dbed1_output
+$ /Users/fumio/.opam/default/bin/ocamlc.opt -config > /var/folders/zj/9frhftnn5qs7ynz_z4wlhg9h0000gn/T/dune_e65488_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -111,3 +111,10 @@ $ /Users/fumio/.opam/default/bin/ocamlc.opt -config > /var/folders/zj/9frhftnn5q
 #      ; windows_unicode = false
 #      }
 #  }
+# Promoting "_build/default/inquirer_oc.opam" to "inquirer_oc.opam"
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_input.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_input.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -I /Users/fumio/.opam/default/lib/batteries -I /Users/fumio/.opam/default/lib/camlp-streams -I /Users/fumio/.opam/default/lib/ocaml/threads -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo -c -impl lib/question_input.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cma lib/.inquirer_oc.objs/byte/inquirer_oc.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Utils.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Types.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Ochalk.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Terminal_util.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_confirm_type.cmo)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -I /Users/fumio/.opam/default/lib/batteries -I /Users/fumio/.opam/default/lib/camlp-streams -I /Users/fumio/.opam/default/lib/ocaml/threads -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx -c -impl lib/question_input.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cmxa lib/.inquirer_oc.objs/native/inquirer_oc.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Utils.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Types.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Ochalk.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Terminal_util.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_confirm_type.cmx)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/inquirer_oc.cmxs lib/inquirer_oc.cmxa)

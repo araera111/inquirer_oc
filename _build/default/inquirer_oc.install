@@ -49,3 +49,6 @@ lib: [
 libexec: [
   "_build/install/default/lib/inquirer_oc/inquirer_oc.cmxs"
 ]
+doc: [
+  "_build/install/default/doc/inquirer_oc/README.md"
+]

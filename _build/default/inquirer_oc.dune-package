@@ -1,6 +1,6 @@
 (lang dune 3.7)
 (name inquirer_oc)
-(sections (lib .) (libexec .))
+(sections (lib .) (libexec .) (doc ../../doc/inquirer_oc))
 (files
  (lib
   (META
@@ -49,7 +49,8 @@
    terminal_util.ml
    types.ml
    utils.ml))
- (libexec (inquirer_oc.cmxs)))
+ (libexec (inquirer_oc.cmxs))
+ (doc (README.md)))
 (library
  (name inquirer_oc)
  (kind normal)

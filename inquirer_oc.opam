@@ -5,7 +5,6 @@ description: "A longer description"
 maintainer: ["Ou Fumio"]
 authors: ["Ou Fumio"]
 license: "MIT"
-version: "1.0.1"
 tags: ["topics" "to describe" "your" "project"]
 homepage: "https://github.com/araera111/inquirer_oc"
 doc: "https://url/to/documentation"
@@ -14,7 +13,6 @@ depends: [
   "ocaml"
   "dune" {>= "3.7"}
   "odoc" {with-doc}
-  "batteries" {>= "3.6.0"}
 ]
 build: [
   ["dune" "subst"] {dev}
