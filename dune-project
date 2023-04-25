@@ -1,7 +1,7 @@
 (lang dune 3.7)
 
 (name inquirer_oc)
-(version 1.0.7)
+(version 1.0.8)
 
 (generate_opam_files true)
 
