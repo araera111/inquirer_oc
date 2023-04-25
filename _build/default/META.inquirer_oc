@@ -1,5 +1,6 @@
+version = "1.0.7"
 description = ""
-requires = "batteries"
+requires = ""
 archive(byte) = "inquirer_oc.cma"
 archive(native) = "inquirer_oc.cmxa"
 plugin(byte) = "inquirer_oc.cma"

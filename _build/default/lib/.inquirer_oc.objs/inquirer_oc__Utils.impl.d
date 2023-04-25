@@ -1,1 +1,1 @@
-lib/utils.ml: BatList Batteries
+lib/utils.ml: List

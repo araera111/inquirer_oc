@@ -1,6 +1,7 @@
 (lang dune 3.7)
 
 (name inquirer_oc)
+(version 1.0.7)
 
 (generate_opam_files true)
 
@@ -17,10 +18,10 @@
 
 (package
  (name inquirer_oc)
- (synopsis "A short synopsis")
- (description "A longer description")
+ (synopsis "A collection of common interactive command line user interfaces")
+ (description "A collection of common interactive command line user interfaces")
  (depends ocaml dune)
  (tags
-  (topics "to describe" your project)))
+  (answer answers ask base cli command command-line confirm enquirer generate generator hyper input inquire inquirer)))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

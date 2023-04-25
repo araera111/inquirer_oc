@@ -1,5 +1,6 @@
 (lang dune 3.7)
 (name inquirer_oc)
+(version 1.0.7)
 (sections (lib .) (libexec .) (doc ../../doc/inquirer_oc))
 (files
  (lib
@@ -57,7 +58,6 @@
  (archives (byte inquirer_oc.cma) (native inquirer_oc.cmxa))
  (plugins (byte inquirer_oc.cma) (native inquirer_oc.cmxs))
  (native_archives inquirer_oc.a)
- (requires batteries)
  (main_module_name Inquirer_oc)
  (modes byte native)
  (modules
