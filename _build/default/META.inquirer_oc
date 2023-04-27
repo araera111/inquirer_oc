@@ -1,7 +1,0 @@
-version = "1.0.14"
-description = ""
-requires = "unix"
-archive(byte) = "inquirer_oc.cma"
-archive(native) = "inquirer_oc.cmxa"
-plugin(byte) = "inquirer_oc.cma"
-plugin(native) = "inquirer_oc.cmxs"
