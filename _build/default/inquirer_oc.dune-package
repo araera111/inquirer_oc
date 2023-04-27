@@ -55,7 +55,7 @@
    types.ml
    utils.ml))
  (libexec (inquirer_oc.cmxs))
- (doc (README.md)))
+ (doc (LICENSE README.md)))
 (library
  (name inquirer_oc)
  (kind normal)

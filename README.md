@@ -40,6 +40,30 @@ let () = print_endline result
 image
 ![result](https://user-images.githubusercontent.com/63596736/234867615-898a0409-f8c8-4add-af13-00be0afd5ffe.png)
 
+#### advanced
+
+If you want a simple string list with word and value together, there is a function to convert.
+
+```ocaml
+open Inquirer_oc
+
+(* string list *)
+let flower_list = [ "sunflower"; "tulip"; "rose"; "daisy"; "lily" ]
+
+let question_option : Question_list_type.question =
+  {
+    name = "flower";
+    prompt_type = List;
+    message = "What's your favorite flower?";
+    (* convert choices string x -> {word: x; value: x} *)
+    choices = Question_list.string_list_to_choice_list flower_list;
+    page_size = Some 5;
+  }
+
+let result = Question_list.list_question question_option
+let () = print_endline result
+```
+
 ### input
 
 ```ocaml
