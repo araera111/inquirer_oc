@@ -1,9 +1,9 @@
 # dune build
 # OCAMLPARAM: unset
 # Shared cache: disabled
-# Workspace root: /Users/takeda/ghq/github.com/araera111/inquirer_oc
-# Auto-detected concurrency: 12
-$ /Users/takeda/.opam/default/bin/ocamlc.opt -config > /var/folders/j6/c6vgcsw9573b_2z4sfpkfxfr0000gq/T/dune_7850c7_output
+# Workspace root: /Users/fumio/ghq/github.com/araera111/inquirer_oc
+# Auto-detected concurrency: 8
+$ /Users/fumio/.opam/default/bin/ocamlc.opt -config > /var/folders/zj/9frhftnn5qs7ynz_z4wlhg9h0000gn/T/dune_a91c46_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -12,40 +12,40 @@ $ /Users/takeda/.opam/default/bin/ocamlc.opt -config > /var/folders/j6/c6vgcsw95
 #  ; for_host = None
 #  ; fdo_target_exe = None
 #  ; build_dir = In_build_dir "default"
-#  ; toplevel_path = Some External "/Users/takeda/.opam/default/lib/toplevel"
-#  ; ocaml_bin = External "/Users/takeda/.opam/default/bin"
-#  ; ocaml = Ok External "/Users/takeda/.opam/default/bin/ocaml"
-#  ; ocamlc = External "/Users/takeda/.opam/default/bin/ocamlc.opt"
-#  ; ocamlopt = Ok External "/Users/takeda/.opam/default/bin/ocamlopt.opt"
-#  ; ocamldep = Ok External "/Users/takeda/.opam/default/bin/ocamldep.opt"
-#  ; ocamlmklib = Ok External "/Users/takeda/.opam/default/bin/ocamlmklib.opt"
+#  ; toplevel_path = Some External "/Users/fumio/.opam/default/lib/toplevel"
+#  ; ocaml_bin = External "/Users/fumio/.opam/default/bin"
+#  ; ocaml = Ok External "/Users/fumio/.opam/default/bin/ocaml"
+#  ; ocamlc = External "/Users/fumio/.opam/default/bin/ocamlc.opt"
+#  ; ocamlopt = Ok External "/Users/fumio/.opam/default/bin/ocamlopt.opt"
+#  ; ocamldep = Ok External "/Users/fumio/.opam/default/bin/ocamldep.opt"
+#  ; ocamlmklib = Ok External "/Users/fumio/.opam/default/bin/ocamlmklib.opt"
 #  ; env =
 #      map
-#        { "DUNE_OCAML_HARDCODED" : "/Users/takeda/.opam/default/lib"
-#        ; "DUNE_OCAML_STDLIB" : "/Users/takeda/.opam/default/lib/ocaml"
+#        { "DUNE_OCAML_HARDCODED" : "/Users/fumio/.opam/default/lib"
+#        ; "DUNE_OCAML_STDLIB" : "/Users/fumio/.opam/default/lib/ocaml"
 #        ; "DUNE_SOURCEROOT" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc"
 #        ; "INSIDE_DUNE" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc/_build/default"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc/_build/default"
 #        ; "MANPATH" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc/_build/install/default/bin"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc/_build/install/default/bin"
 #        ; "OCAMLFIND_IGNORE_DUPS_IN" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib"
 #        ; "OCAMLPATH" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib"
 #        ; "OCAMLTOP_INCLUDE_PATH" :
-#            "/Users/takeda/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib/toplevel"
+#            "/Users/fumio/ghq/github.com/araera111/inquirer_oc/_build/install/default/lib/toplevel"
 #        ; "OCAML_COLOR" : "always"
 #        ; "OPAMCOLOR" : "always"
 #        }
-#  ; findlib_paths = [ External "/Users/takeda/.opam/default/lib" ]
+#  ; findlib_paths = [ External "/Users/fumio/.opam/default/lib" ]
 #  ; arch_sixtyfour = true
 #  ; natdynlink_supported = true
 #  ; supports_shared_libraries = true
 #  ; ocaml_config =
 #      { version = "4.14.1"
-#      ; standard_library_default = "/Users/takeda/.opam/default/lib/ocaml"
-#      ; standard_library = "/Users/takeda/.opam/default/lib/ocaml"
+#      ; standard_library_default = "/Users/fumio/.opam/default/lib/ocaml"
+#      ; standard_library = "/Users/fumio/.opam/default/lib/ocaml"
 #      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
 #      ; ccomp_type = "cc"
 #      ; c_compiler = "cc"
@@ -75,7 +75,7 @@ $ /Users/takeda/.opam/default/bin/ocamlc.opt -config > /var/folders/j6/c6vgcsw95
 #      ; native_c_libraries = [ "-lm" ]
 #      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
 #      ; cc_profile = []
-#      ; architecture = "amd64"
+#      ; architecture = "arm64"
 #      ; model = "default"
 #      ; int_size = 63
 #      ; word_size = 64
@@ -91,8 +91,8 @@ $ /Users/takeda/.opam/default/bin/ocamlc.opt -config > /var/folders/j6/c6vgcsw95
 #      ; os_type = "Unix"
 #      ; default_executable_name = "a.out"
 #      ; systhread_supported = true
-#      ; host = "x86_64-apple-darwin22.3.0"
-#      ; target = "x86_64-apple-darwin22.3.0"
+#      ; host = "aarch64-apple-darwin22.3.0"
+#      ; target = "aarch64-apple-darwin22.3.0"
 #      ; profiling = false
 #      ; flambda = false
 #      ; spacetime = false
@@ -112,38 +112,38 @@ $ /Users/takeda/.opam/default/bin/ocamlc.opt -config > /var/folders/j6/c6vgcsw95
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.inquirer_oc.eobjs/byte -no-alias-deps -opaque -o test/.inquirer_oc.eobjs/byte/dune__exe__Inquirer_oc.cmi -c -intf test/inquirer_oc.mli)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -o lib/.inquirer_oc.objs/byte/inquirer_oc.cmo -c -impl lib/inquirer_oc.ml-gen)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/utils.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Utils.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/ochalk.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Ochalk.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/question_confirm_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_confirm_type.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/question_input.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_input.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/question_input_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_input_type.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/question_list.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_list.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/question_list_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_list_type.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/terminal_util.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Terminal_util.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamldep.opt -modules -impl lib/types.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Types.impl.d
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Utils.cmo -c -impl lib/utils.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Ochalk.cmo -c -impl lib/ochalk.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Types.cmo -c -impl lib/types.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.inquirer_oc.eobjs/byte -I test/.inquirer_oc.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.inquirer_oc.eobjs/native/dune__exe__Inquirer_oc.cmx -c -impl test/inquirer_oc.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_confirm_type.cmo -c -impl lib/question_confirm_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Terminal_util.cmo -c -impl lib/terminal_util.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input_type.cmo -c -impl lib/question_input_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list_type.cmo -c -impl lib/question_list_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo -c -impl lib/question_input.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.inquirer_oc.objs/native/inquirer_oc.cmx -c -impl lib/inquirer_oc.ml-gen)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list.cmo -c -impl lib/question_list.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Utils.cmx -c -impl lib/utils.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Ochalk.cmx -c -impl lib/ochalk.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cma lib/.inquirer_oc.objs/byte/inquirer_oc.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Utils.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Types.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Ochalk.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Terminal_util.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_confirm_type.cmo)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Types.cmx -c -impl lib/types.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_confirm_type.cmx -c -impl lib/question_confirm_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_input_type.cmx -c -impl lib/question_input_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_list_type.cmx -c -impl lib/question_list_type.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Terminal_util.cmx -c -impl lib/terminal_util.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx -c -impl lib/question_input.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_list.cmx -c -impl lib/question_list.ml)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/inquirer_oc.exe test/.inquirer_oc.eobjs/native/dune__exe__Inquirer_oc.cmx)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cmxa lib/.inquirer_oc.objs/native/inquirer_oc.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Utils.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Types.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Ochalk.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Terminal_util.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_confirm_type.cmx)
-$ (cd _build/default && /Users/takeda/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/inquirer_oc.cmxs lib/inquirer_oc.cmxa)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.inquirer_oc.eobjs/byte -no-alias-deps -opaque -o test/.inquirer_oc.eobjs/byte/dune__exe__Inquirer_oc.cmi -c -intf test/inquirer_oc.mli)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -o lib/.inquirer_oc.objs/byte/inquirer_oc.cmo -c -impl lib/inquirer_oc.ml-gen)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.inquirer_oc.eobjs/byte -I test/.inquirer_oc.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.inquirer_oc.eobjs/native/dune__exe__Inquirer_oc.cmx -c -impl test/inquirer_oc.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/ochalk.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Ochalk.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/utils.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Utils.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_confirm_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_confirm_type.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_input.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_input.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_input_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_input_type.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_list.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_list.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/question_list_type.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Question_list_type.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/terminal_util.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Terminal_util.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamldep.opt -modules -impl lib/types.ml) > _build/default/lib/.inquirer_oc.objs/inquirer_oc__Types.impl.d
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Ochalk.cmo -c -impl lib/ochalk.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Utils.cmo -c -impl lib/utils.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Types.cmo -c -impl lib/types.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Terminal_util.cmo -c -impl lib/terminal_util.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_confirm_type.cmo -c -impl lib/question_confirm_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input_type.cmo -c -impl lib/question_input_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list_type.cmo -c -impl lib/question_list_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.inquirer_oc.objs/native/inquirer_oc.cmx -c -impl lib/inquirer_oc.ml-gen)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Ochalk.cmx -c -impl lib/ochalk.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo -c -impl lib/question_input.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Utils.cmx -c -impl lib/utils.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Types.cmx -c -impl lib/types.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I lib/.inquirer_oc.objs/byte -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list.cmo -c -impl lib/question_list.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Terminal_util.cmx -c -impl lib/terminal_util.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_input_type.cmx -c -impl lib/question_input_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cma lib/.inquirer_oc.objs/byte/inquirer_oc.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Utils.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Types.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Ochalk.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Terminal_util.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_list.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input_type.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_input.cmo lib/.inquirer_oc.objs/byte/inquirer_oc__Question_confirm_type.cmo)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_confirm_type.cmx -c -impl lib/question_confirm_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_list_type.cmx -c -impl lib/question_list_type.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx -c -impl lib/question_input.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.inquirer_oc.objs/byte -I lib/.inquirer_oc.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Inquirer_oc -o lib/.inquirer_oc.objs/native/inquirer_oc__Question_list.cmx -c -impl lib/question_list.ml)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o test/inquirer_oc.exe test/.inquirer_oc.eobjs/native/dune__exe__Inquirer_oc.cmx)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/inquirer_oc.cmxa lib/.inquirer_oc.objs/native/inquirer_oc.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Utils.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Types.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Ochalk.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Terminal_util.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_list.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input_type.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_input.cmx lib/.inquirer_oc.objs/native/inquirer_oc__Question_confirm_type.cmx)
+$ (cd _build/default && /Users/fumio/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I lib -o lib/inquirer_oc.cmxs lib/inquirer_oc.cmxa)

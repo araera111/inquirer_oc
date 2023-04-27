@@ -57,7 +57,7 @@ let string_list_to_choice_list (list : string list) : choice list =
   in
   loop list 1 []
 
-let list_question num question_option =
+let list_question question_option =
   let { message; choices; page_size; _ } = question_option in
 
   let pz = match page_size with Some x -> x | None -> 5 in
@@ -109,7 +109,8 @@ let list_question num question_option =
         let item = List.nth now_list (!selected - 1) in
         (* message : item.value *)
         print_string (message ^ " : " ^ item.value);
+        print_newline ();
         item.value
     | _ -> loop !selected list_index
   in
-  loop num 0
+  loop 1 0

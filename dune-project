@@ -1,7 +1,7 @@
 (lang dune 3.7)
 
 (name inquirer_oc)
-(version 1.0.8)
+(version 1.0.11)
 
 (generate_opam_files true)
 
@@ -14,7 +14,7 @@
 
 (license MIT)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/araera111/inquirer_oc/#README)
 
 (package
  (name inquirer_oc)
