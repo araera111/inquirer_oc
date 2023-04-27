@@ -1,7 +1,5 @@
 # inquirer_oc
 
-v1.0.8
-
 ## What does "inquirer_oc" library do?
 
 Allow interaction on the CLI For example, you can have the user select one from multiple lists.
