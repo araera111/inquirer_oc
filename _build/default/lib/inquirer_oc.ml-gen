@@ -3,6 +3,9 @@
 (** @canonical Inquirer_oc.Ochalk *)
 module Ochalk = Inquirer_oc__Ochalk
 
+(** @canonical Inquirer_oc.Question_confirm *)
+module Question_confirm = Inquirer_oc__Question_confirm
+
 (** @canonical Inquirer_oc.Question_confirm_type *)
 module Question_confirm_type = Inquirer_oc__Question_confirm_type
 
