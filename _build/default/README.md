@@ -15,3 +15,49 @@ Currently, three types of question formats are implemented.
 ## usage
 
 1. list
+
+```ocaml
+open Inquirer_oc
+
+let question_option : Question_list_type.question =
+  {
+    name = "flower";
+    prompt_type = List;
+    message = "What's your favorite flower?";
+    choices =
+      [
+        { word = "Sunflower"; value = "sunflower" };
+        { word = "Tulip"; value = "tulip" };
+        { word = "Rose"; value = "rose" };
+        { word = "Daisy"; value = "daisy" };
+        { word = "Lily"; value = "lily" };
+      ];
+    page_size = Some 5;
+  }
+
+let result = Question_list.list_question question_option
+let () = print_endline result
+```
+
+image
+![result](https://user-images.githubusercontent.com/63596736/234867615-898a0409-f8c8-4add-af13-00be0afd5ffe.png)
+
+2. input
+
+```ocaml
+open Inquirer_oc
+
+let question_option : Question_input_type.question_input_option =
+  {
+    name = "flower";
+    prompt_type = Input;
+    message = "What's your favorite flower?";
+    default = Some "rose";
+  }
+
+let result = Question_input.question_input question_option
+let () = print_endline result
+```
+
+image
+![result](https://user-images.githubusercontent.com/63596736/234869587-d8d063b2-9154-4f4b-b391-c70de2916736.png)

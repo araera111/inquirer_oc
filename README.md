@@ -14,7 +14,7 @@ Currently, three types of question formats are implemented.
 
 ## usage
 
-1. list
+### list
 
 ```ocaml
 open Inquirer_oc
@@ -41,3 +41,43 @@ let () = print_endline result
 
 image
 ![result](https://user-images.githubusercontent.com/63596736/234867615-898a0409-f8c8-4add-af13-00be0afd5ffe.png)
+
+### input
+
+```ocaml
+open Inquirer_oc
+
+let question_option : Question_input_type.question_input_option =
+  {
+    name = "flower";
+    prompt_type = Input;
+    message = "What's your favorite flower?";
+    default = Some "rose";
+  }
+
+let result = Question_input.question_input question_option
+let () = print_endline result
+```
+
+image
+![result](https://user-images.githubusercontent.com/63596736/234869587-d8d063b2-9154-4f4b-b391-c70de2916736.png)
+
+### confirm
+
+```ocaml
+open Inquirer_oc
+
+let question_option : Question_confirm_type.question_confirm_option =
+  {
+    name = "confirm";
+    message = "Are you sure?";
+    prompt_type = Confirm;
+    default = Some true;
+  }
+
+let result = Question_confirm.inquirer_confirm question_option
+let () = print_string (string_of_bool result)
+```
+
+image
+![result](https://user-images.githubusercontent.com/63596736/234873340-2405d7cc-0177-43fe-aa4f-792b80b2d368.png)

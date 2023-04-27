@@ -1,6 +1,6 @@
 (lang dune 3.7)
 (name inquirer_oc)
-(version 1.0.11)
+(version 1.0.14)
 (sections (lib .) (libexec .) (doc ../../doc/inquirer_oc))
 (files
  (lib
@@ -16,6 +16,9 @@
    inquirer_oc__Ochalk.cmi
    inquirer_oc__Ochalk.cmt
    inquirer_oc__Ochalk.cmx
+   inquirer_oc__Question_confirm.cmi
+   inquirer_oc__Question_confirm.cmt
+   inquirer_oc__Question_confirm.cmx
    inquirer_oc__Question_confirm_type.cmi
    inquirer_oc__Question_confirm_type.cmt
    inquirer_oc__Question_confirm_type.cmx
@@ -42,6 +45,7 @@
    inquirer_oc__Utils.cmx
    ochalk.ml
    opam
+   question_confirm.ml
    question_confirm_type.ml
    question_input.ml
    question_input_type.ml
@@ -75,6 +79,10 @@
       (obj_name inquirer_oc__Ochalk)
       (visibility public)
       (source (path Ochalk) (impl (path ochalk.ml))))
+     (module
+      (obj_name inquirer_oc__Question_confirm)
+      (visibility public)
+      (source (path Question_confirm) (impl (path question_confirm.ml))))
      (module
       (obj_name inquirer_oc__Question_confirm_type)
       (visibility public)
