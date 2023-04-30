@@ -86,10 +86,12 @@ let rawlist_question (question_rawlist_option : question_rawlist_option) =
         loop !selected list_index
     | Some "Enter" ->
         let item = List.nth now_list (!selected - 1) in
-        (* message : item.value *)
         print_string (message ^ " : " ^ item.value);
         print_newline ();
         item.value
-    | _ -> loop !selected list_index
+    | _ ->
+        let answer = read_and_print () in
+        print_endline answer;
+        loop !selected list_index
   in
   loop 1 0
