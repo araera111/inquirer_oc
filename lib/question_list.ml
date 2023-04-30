@@ -61,7 +61,6 @@ let list_question question_option =
   let { message; choices; page_size; _ } = question_option in
 
   let pz = match page_size with Some x -> x | None -> 5 in
-
   let subList = Utils.split_every pz choices in
   let is_pagination = List.length subList > 1 in
   let now_list = List.nth subList 0 in
