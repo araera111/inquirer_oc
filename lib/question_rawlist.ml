@@ -1,5 +1,6 @@
 open Question_rawlist_type
 open Terminal_util
+open Question_list
 
 let rawlist_to_string (list : choice list) (current_index : int)
     (is_pagination : bool) (pagination_index : int) (pagination_length : int)
@@ -18,7 +19,6 @@ let rawlist_to_string (list : choice list) (current_index : int)
             (result ^ "  " ^ string_of_int index ^ ")" ^ word ^ "\n")
   in
   print_endline messsage;
-  print_endline "Use arrow keys to navigate, Enter to select.";
   print_endline (loop list current_index 1 "") |> ignore;
   if is_pagination then
     print_endline
@@ -46,3 +46,50 @@ let rawlist_question (question_rawlist_option : question_rawlist_option) =
   (* 関数起動時に画面を初期化する *)
   clear_screen ();
   rawlist_to_string now_list 1 is_pagination 0 (List.length sub_list) message
+  |> ignore;
+
+  (* 入力を監視し、ループする *)
+  let rec loop index list_index =
+    let selected = ref index in
+    let subList = Utils.split_every valid_page_size choices in
+    let is_pagination = List.length subList > 1 in
+    let now_list = List.nth subList list_index in
+    let key = read_arrow_key () in
+    match key with
+    | Some "Up" ->
+        clear_screen ();
+        selected := get_index !selected false (List.length now_list);
+        rawlist_to_string now_list !selected is_pagination list_index
+          (List.length subList) message;
+        loop !selected list_index
+    | Some "Left" ->
+        clear_screen ();
+        let next_list_index = prev_page_list subList list_index in
+        let next_list = List.nth subList next_list_index in
+        selected := get_pagenation_sublist_cursor next_list !selected;
+        rawlist_to_string next_list !selected is_pagination next_list_index
+          (List.length subList) message;
+        loop !selected next_list_index
+    | Some "Right" ->
+        clear_screen ();
+        let next_list_index = next_page_list subList list_index in
+        let next_list = List.nth subList next_list_index in
+        selected := get_pagenation_sublist_cursor next_list !selected;
+        rawlist_to_string next_list !selected is_pagination next_list_index
+          (List.length subList) message;
+        loop !selected next_list_index
+    | Some "Down" ->
+        clear_screen ();
+        selected := get_index !selected true (List.length now_list);
+        rawlist_to_string now_list !selected is_pagination list_index
+          (List.length subList) message;
+        loop !selected list_index
+    | Some "Enter" ->
+        let item = List.nth now_list (!selected - 1) in
+        (* message : item.value *)
+        print_string (message ^ " : " ^ item.value);
+        print_newline ();
+        item.value
+    | _ -> loop !selected list_index
+  in
+  loop 1 0
